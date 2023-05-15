@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+.container{
+    width: 925px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px grey;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.post-container, .comment-items{
+    padding: 1em;
+}
+
+.profile-user{
+    font-weight: 500; 
+}
+
+.profile-detail{
+    width: 100%;
+    font-weight: 400; 
+}
+
+.profile-img{
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.post-caption{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.main-img{
+    width: 100%;
+    max-height: 450px;
+}
+
+.time{
+    color: gray;
+}
+
+.fa-ellipsis-v{
+    cursor: pointer;
+}
+
+.reaction,.like,.share{
+    display: flex;
+    align-items: center;
+}
+
+.like, .share{
+    margin: 1em 1.75em 0.25em 0;
+    cursor: pointer;
+}
+
+.fa-heart, .fa-share-alt, .comment-count p{
+    margin-right: 0.6em;
+}
+
+.comment-container{
+    background-color: whitesmoke;
+    border-radius: 0 0 10px 10px;
+}
+
+.comment-count{
+    display: flex;
+}
+
+.fa-angle-down{
+    transform: translateY(1.5px) ;
+}
+
+.comment-top{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.comment-date{
+    color: gray;
+    font-family: 'Lato', sans-serif;
+}
+
+span{
+    color: rgb(9, 154, 202);
+    font-weight: 400;
+}
+
+.comment-reply{
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.flag{
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+button{
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(9, 154, 202);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+textarea{
+    font-size: 16px;
+    color: gray;
+    font-weight: 400;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 5px;
+}
